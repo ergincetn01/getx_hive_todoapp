@@ -9,6 +9,9 @@ class TodoController extends GetxController {
   var remaining = [].obs;
 
   TextEditingController titleController = TextEditingController();
+  TextEditingController descriptionController = TextEditingController();
+  FocusNode titleFocus = FocusNode();
+  FocusNode descriptioinFocus = FocusNode();
 
   onInit() {
     try {
